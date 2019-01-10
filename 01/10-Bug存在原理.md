@@ -111,7 +111,19 @@ OKOK,我放弃。
 
 NO ROOT NO CODE 
 
-最后再次找了运维小哥。解决了改问题。
+最后再次找了运维小哥。解决了该问题。
+
+
+好了，下面说这个问题的真正原因
+
+在暴漏给dubbo的服务中使用了A接口，但是实现的时候impl的是B接口。 这两个接口的名字很接近导致写错了。
+
+``` java
+@Service(interfaceClass = MyFacade.class, version = "1.0.0")
+class MyFacadeImpl implements MyV2Facade{...} 
+```
+
+惊不惊喜？
 
 
 ### Java技术
