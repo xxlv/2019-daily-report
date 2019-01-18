@@ -26,7 +26,22 @@
 
  
 
+### Service export 
 
+```java
+
+    Invoker<?> invoker = proxyFactory.getInvoker(ref, (Class) interfaceClass, registryURL.addParameterAndEncoded(Constants.EXPORT_KEY, url.toFullString()));
+    DelegateProviderMetaDataInvoker wrapperInvoker = new DelegateProviderMetaDataInvoker(invoker, this);
+
+    Exporter<?> exporter = protocol.export(wrapperInvoker);
+    exporters.add(exporter);
+```
+
+incubator-dubbo\dubbo-config\dubbo-config-api\src\main\java\org\apache\dubbo\config\ServiceConfig.java 中的export方法，将provider的methods暴露出去。
+
+可以看到，protocol 通过export一个DelegateProviderMetaDataInvoker来执行最终的操作。
+
+url本身的params 
 
 
 
