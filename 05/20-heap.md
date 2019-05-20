@@ -7,14 +7,34 @@ priorityQueue 是一个优先级队列。queue是有序的，按照compator所�
 
 ### heapify
 
-插入数据：```bash  [1,23,32,3,41] ```到queue中，将构建如下的Heap结构
+插入数据：```bash  [1,23,32,3,41] ```到queue中，将构建如下的Heap结构(图为使用dot生成 https://graphviz.gitlab.io/_pages/doc/info/lang.html)
 
 
-## todo 
+![Image text](https://raw.githubusercontent.com/xxlv/2019-daily-report/master/resources/images/05/01.png)  
+
+![Image text](https://raw.githubusercontent.com/xxlv/2019-daily-report/master/resources/images/05/02.png)
+
+
+![Image text](https://raw.githubusercontent.com/xxlv/2019-daily-report/master/resources/images/05/03.png)
+
+
+![Image text](https://raw.githubusercontent.com/xxlv/2019-daily-report/master/resources/images/05/04.png)
+
+
+![Image text](https://raw.githubusercontent.com/xxlv/2019-daily-report/master/resources/images/05/05.png)
+
+
+![Image text](https://raw.githubusercontent.com/xxlv/2019-daily-report/master/resources/images/05/06.png)
+
+
+![Image text](https://raw.githubusercontent.com/xxlv/2019-daily-report/master/resources/images/05/07.png)
+
+
+![Image text](https://raw.githubusercontent.com/xxlv/2019-daily-report/master/resources/images/05/08.png)
+
+
+![Image text](https://raw.githubusercontent.com/xxlv/2019-daily-report/master/resources/images/05/09.png)
 
 
 
-### siftDown
-
-
-### siftUp
+这个offer的过程，是一个 **siftUp** 的过程
